@@ -5,8 +5,11 @@ fn main() {
     let decimal:f32 = 2.5;
     println!("{}", decimal);
 
-    let  mut is_true:bool = false;
+    let  is_true:bool = false;
     println!("{} bytes", std::mem::size_of_val(&is_true));
 
     let word:char = 'C';
+
+
+    println!("char = {} bytes", std::mem::size_of_val(&word));
 }
