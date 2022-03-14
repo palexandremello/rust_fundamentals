@@ -1,4 +1,4 @@
-fn main() {
+fn main() {    
     let variavel:i32 = 128;
     println!("variavel = {}, tamanho = {}", variavel, std::mem::size_of_val(&variavel));
 
@@ -12,4 +12,7 @@ fn main() {
 
 
     println!("char = {} bytes", std::mem::size_of_val(&word));
+
+    const PI:f32 = 3.14;
+    println!("PI = {}", PI);
 }
