@@ -3,9 +3,9 @@ static GLOBAL_VARIABLE:u8 = 1;
 
 fn escopo() {
     let variavel:i32 = 300;
-    println!("variavel = {}, tamanho = {}", variavel, &variavel);
+    println!("variavel = {}, tamanho = {:p}", variavel, &variavel);
     let variavel:i32 = 301;
-    println!("variavel = {}, tamanho = {}", variavel, &variavel);
+    println!("variavel = {}, tamanho = {:p}", variavel, &variavel);
     let decimal:f32 = 2.5;
     println!("{}", decimal);
 
