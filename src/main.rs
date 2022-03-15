@@ -1,6 +1,7 @@
 static GLOBAL_VARIABLE:u8 = 1;
 
-fn main() {    
+
+fn escopo() {
     let variavel:i32 = 128;
     println!("variavel = {}, tamanho = {}", variavel, std::mem::size_of_val(&variavel));
 
@@ -18,4 +19,7 @@ fn main() {
     const PI:f32 = 3.14;
     println!("PI = {}", PI);
     println!("Global variable = {}", GLOBAL_VARIABLE);
+}
+fn main() {    
+    escopo()
 }
