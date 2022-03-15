@@ -1,5 +1,7 @@
 static GLOBAL_VARIABLE:u8 = 1;
 
+
+
 fn sombra () {
     let a = 123;
     {
