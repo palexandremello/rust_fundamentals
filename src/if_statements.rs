@@ -9,4 +9,9 @@ fn main() {
     } else {
         println!("not okay");
     }
+
+    let condition = if is_root { "is root"} else {"is not root"};
+
+    println!("{}", condition);
+
 }
