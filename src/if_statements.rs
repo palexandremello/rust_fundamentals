@@ -12,6 +12,6 @@ fn main() {
 
     let condition = if is_root { "is root"} else {"is not root"};
 
-    println!("{}", condition);
+    println!("{}",  condition);
 
 }
