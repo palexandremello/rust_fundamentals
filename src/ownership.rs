@@ -2,18 +2,16 @@
 
 fn ownership() {
     let one_string = String::from("Stringzinha");
-    let new_string = rouba(one_string);
+    rouba(&one_string);
 
-    println!("{}", new_string);
+    println!("{}", one_string);
 
 }
 
-fn rouba(string: String) -> String {
+fn rouba(string: &String) {
     println!("{}", string);
-
-    string
 }
 
 fn main() {
-    ownership()
+    ownership();
 }
