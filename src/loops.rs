@@ -7,11 +7,14 @@ fn main() {
         println!("{} x {} = {}", multiplicador, contador, multiplicador * contador);
     }
 
-    contador = 0
+    contador = 0;
     loop {
         contador += 1;
         println!("{} x {} = {}", multiplicador, contador, multiplicador * contador);
-        break;
+        
+        if contador == 10 {
+            break;
+        }
     }
 
 }
