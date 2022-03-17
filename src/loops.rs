@@ -4,7 +4,14 @@ fn main() {
 
     while contador < 10 {
         contador += 1;
-        println!("{} x {} = {}", multiplicador, contador, multiplicador * contador)
+        println!("{} x {} = {}", multiplicador, contador, multiplicador * contador);
+    }
+
+    contador = 0
+    loop {
+        contador += 1;
+        println!("{} x {} = {}", multiplicador, contador, multiplicador * contador);
+        break;
     }
 
 }
