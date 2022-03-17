@@ -4,6 +4,10 @@ fn main() {
 
     while contador < 10 {
         contador += 1;
+
+        if contador == 5 {
+            continue;
+        }
         println!("{} x {} = {}", multiplicador, contador, multiplicador * contador);
     }
 
